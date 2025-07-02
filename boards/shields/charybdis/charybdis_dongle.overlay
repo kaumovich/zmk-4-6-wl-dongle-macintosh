@@ -1,6 +1,7 @@
 #include "charybdis.dtsi"
 
-/ chosen {
+/ {
+    chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
         zephyr,display = &oled;
