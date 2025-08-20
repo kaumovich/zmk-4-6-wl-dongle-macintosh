@@ -6,6 +6,15 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config USB_DEVICE_PRODUCT
+	default "Charybdis"
+
+config USB_DEVICE_VID
+	default "0x0000"
+
+config USB_DEVICE_PID
+	default "0xFEED"
+
 endif
 
 if ZMK_DISPLAY
@@ -42,14 +51,7 @@ endif
 
 if SHIELD_CHARYBDIS_DONGLE || SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
-config USB_DEVICE_PRODUCT
-	default "charybdis"
-
-config USB_DEVICE_VID
-	default "0x0000"
-
-config USB_DEVICE_PID
-	default "0xFEED"
 
 endif
+
 
