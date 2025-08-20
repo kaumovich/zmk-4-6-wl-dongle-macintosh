@@ -96,14 +96,6 @@
                 <&kp>;
         };
     };
-     behaviors {
-         studio_unlock: studio_unlock {
-             compatible = "zmk,behavior-macro";
-             label = "STUDIO_UNLOCK";
-             #binding-cells = <0>;
-             bindings = <&kp LC(L)>;
-         };
-     };
 }
     keymap {
         compatible = "zmk,keymap";
@@ -133,7 +125,7 @@
             display-name = "Lower";
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &studio_unlock     &trans       &trans         &trans      &sys_reset   &bootloader         &trans       &trans         &trans        &trans        &trans        &trans
+                   &ESC           &trans       &trans         &trans      &sys_reset   &bootloader         &trans       &trans         &trans        &trans        &trans        &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &trans         &trans       &kp UP         &trans       &trans         &trans           &kp N7       &kp N8         &kp N9        &kp N0        &kp HOME      &kp F1
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -228,5 +220,6 @@
         };
     };
 };
+
 
 
