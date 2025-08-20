@@ -15,6 +15,9 @@ config USB_DEVICE_VID
 config USB_DEVICE_PID
 	default "0xFEED"
 
+config USB_DEVICE_MANUFACTURER
+	default "bastard kb"
+
 endif
 
 if ZMK_DISPLAY
@@ -53,5 +56,6 @@ if SHIELD_CHARYBDIS_DONGLE || SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 
 endif
+
 
 
