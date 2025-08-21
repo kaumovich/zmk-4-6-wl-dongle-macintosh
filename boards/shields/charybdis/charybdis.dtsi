@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "zmk-4-6-wl-dongle-macintosh/config/charybdis-layouts.dtsi"
+#include <zmk-4-6-wl-dongle-macintosh/config/charybdis-layouts.dtsi>
 
 / {
     chosen {
@@ -26,6 +26,7 @@
         diode-direction = "row2col";
     };
 };
+
 
 
 
