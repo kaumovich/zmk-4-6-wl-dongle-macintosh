@@ -53,9 +53,3 @@ config USB_DEVICE_PID
 
 config USB_DEVICE_MANUFACTURER
 	default "kaumovich" #original by bastardkeyboards
-
-endif
-
-
-
-
