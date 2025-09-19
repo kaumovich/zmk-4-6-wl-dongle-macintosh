@@ -1,15 +1,13 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts/default_layout.dtsi"
-#include <physical_layouts.dtsi>
-
-&default_layout { transform = <&default_transform>; };
 
 / {
-    chosen {
+	chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
     };
 
+&default_layout { transform = <&default_transform>; };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
@@ -30,6 +28,7 @@
         diode-direction = "row2col";
     };
 };
+
 
 
 
