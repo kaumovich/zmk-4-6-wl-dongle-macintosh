@@ -1,5 +1,5 @@
 #include <physical_layouts.dtsi>
-
+#include "boards/shields/charybdis/layouts/position_map.dtsi"
 / {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
