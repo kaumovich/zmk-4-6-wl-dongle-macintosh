@@ -21,8 +21,8 @@ manifest:
       remote: badjeff
       revision: main
     - name: zmk-studio
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
+      renote: main
+      import: https://github.com/petejohanson/zmk-studio
+      
   self:
     path: config
