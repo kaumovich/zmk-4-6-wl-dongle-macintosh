@@ -25,6 +25,7 @@ manifest:
     - name: studio
       remote: zmkstudio
       revision: main
+      import: app/west.yml
       
   self:
     path: config
