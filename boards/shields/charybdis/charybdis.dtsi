@@ -2,9 +2,9 @@
 #include "layouts/default_layout.dtsi"
 
 / {
-    chosen {
+chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &charybdis_physical_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -26,3 +26,9 @@
         diode-direction = "row2col";
     };
 };
+
+#{
+#    chosen {
+#        zmk,kscan = &kscan0;
+#        zmk,matrix_transform = &default_transform;
+#    };
