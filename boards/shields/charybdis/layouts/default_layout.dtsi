@@ -77,7 +77,7 @@
     };
 };
 
-//&layouts_charybdis_position_map {
+// &layouts_charybdis_position_map {
 //        default {
 //                physical-layout = <&default_layout>;
 //        positions
@@ -88,4 +88,4 @@
 //        ,          <48 49 50     51 52>
 //        ,             <53 54     55>;
 //    };
-//};
+// };
