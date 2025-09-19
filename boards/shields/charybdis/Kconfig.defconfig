@@ -45,6 +45,16 @@ if SHIELD_CHARYBDIS_DONGLE || SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 endif
 
+config USB_DEVICE_VID
+	default "0x0000"
+
+config USB_DEVICE_PID
+	default "0xFEED"
+
+config USB_DEVICE_MANUFACTURER
+	default "kaumovich" #original by bastardkeyboards
+
+
 
 
 
