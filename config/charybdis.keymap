@@ -9,6 +9,8 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+#define GAM 4
+#define DUM 5
 
 / {
     combos {
@@ -105,9 +107,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
-            label = "Base";
-            display-name = "Base";
+         default_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                    &kp ESC       &kp N1         &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0       &kp DEL
@@ -125,9 +125,7 @@
             >;
         };
 
-        Lower {
-            label = "Lower";
-            display-name = "Lower";
+        lower_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                    &trans         &trans       &trans         &trans      &sys_reset   &bootloader         &trans       &trans         &trans        &trans        &trans        &trans
@@ -145,9 +143,7 @@
             >;
         };
 
-        Raise {
-            label = "Raise";
-            display-name = "Raise";
+        raise_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                    &trans        &trans         &trans       &trans         &trans       &trans          &bootloader    &sys_reset     &trans        &trans        &trans        &trans
@@ -165,9 +161,7 @@
             >;
         };
 
-        Game {
-            label = "Game";
-            display-name = "Game";
+        game_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                    &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
@@ -185,9 +179,7 @@
             >;
         };
 
-        Game_++ {
-            label = "Game ++";
-            display-name = "Gameq";
+        dumb_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                    &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
@@ -205,8 +197,7 @@
             >;
         };
 
-        Mouse {
-            display-name = "Mouse";
+        mouse_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                    &trans         &trans       &trans         &trans       &trans         &trans           &trans       &trans         &trans        &trans        &trans        &trans
@@ -225,6 +216,7 @@
         };
     };
 };
+
 
 
 
