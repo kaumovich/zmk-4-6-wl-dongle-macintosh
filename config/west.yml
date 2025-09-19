@@ -21,7 +21,7 @@ manifest:
       remote: badjeff
       revision: main
     - name: zmk-studio
-      renote: main
+      remote: zmkfirmwire
       import: https://github.com/petejohanson/zmk-studio
       
   self:
