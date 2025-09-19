@@ -7,14 +7,9 @@
         zmk,matrix_transform = &default_transform;
     };
 
-#{
-#chosen {
-#       zmk,kscan = &kscan0;
-#        zmk,physical-layout = &charybdis_physical_layout;
-#    };
 
     default_transform: keymap_transform_0 {
-        compatible = "zmk,physical-layout";
+        compatible = "zmk,matrix_transform";
         columns = <12>;
         rows = <5>;
 
@@ -32,6 +27,7 @@
         diode-direction = "row2col";
     };
 };
+
 
 
 
