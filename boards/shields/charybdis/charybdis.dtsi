@@ -1,7 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts/default_layout.dtsi"
-
-
 / {
 	chosen {
         zmk,kscan = &kscan0;
@@ -29,20 +27,3 @@
         diode-direction = "row2col";
     };
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
