@@ -1,8 +1,5 @@
 #include <physical_layouts.dtsi>
-
 #include "position_map.dtsi"
-
-
 / {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
@@ -76,4 +73,3 @@
             ;
     };
 };
-
