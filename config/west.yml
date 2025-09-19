@@ -5,7 +5,7 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: zmkstudio
-      url-base: https:/githab.com/zmkfirmwire
+      url-base: https:/githab.com/zmkfirmwire/studio
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -25,7 +25,7 @@ manifest:
     - name: studio
       remote: zmkstudio
       revision: main
-      import: app/west.yml
+      
       
   self:
     path: config
