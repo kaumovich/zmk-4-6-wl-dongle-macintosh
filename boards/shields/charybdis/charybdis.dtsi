@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts/default_layout.dtsi"
+#include <physical_layouts.dtsi>
 
 &default_layout { transform = <&default_transform>; };
 
@@ -29,6 +30,7 @@
         diode-direction = "row2col";
     };
 };
+
 
 
 
