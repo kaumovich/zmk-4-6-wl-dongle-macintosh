@@ -20,7 +20,7 @@ manifest:
     - name: zmk-input-behavior-listener
       remote: badjeff
       revision: main
-    - name: zmk
+    - name: zmk-studio
       remote: zmkfirmware
       revision: main
       import: app/west.yml
