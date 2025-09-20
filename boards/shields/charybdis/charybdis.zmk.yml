@@ -10,3 +10,8 @@ features:
 outputs:
   - usb
   - ble
+id: charybdis
+siblings:
+  - charybdis_dongle
+  - charybdis_left
+  - charybdis_right
