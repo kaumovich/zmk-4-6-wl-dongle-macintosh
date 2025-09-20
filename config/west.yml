@@ -5,7 +5,7 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: zmkfirmwire
-      url-base: https://github.com/zmkfirmwire
+      url-base:  https://github.com/zmkfirmwire/zmkfirmwire
     
 
     # Additional modules containing boards/shields/custom code can be listed here as well
