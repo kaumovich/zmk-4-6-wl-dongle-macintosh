@@ -4,7 +4,7 @@ manifest:
     #url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: zmk
+    - name: zmkfirmwire
       url-base: https://github.com/zmkfirmwire
     
 
@@ -12,7 +12,7 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmkfirmwire
-      remote: zmk
+      remote: zmkfirmwire
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
