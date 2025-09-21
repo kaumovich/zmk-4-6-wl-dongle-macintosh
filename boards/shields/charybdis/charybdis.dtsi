@@ -28,7 +28,6 @@
     };
 };
 
-/ {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Charybdis 5x6";
@@ -115,6 +114,7 @@
         ,             <53 54 55>;
     };
 };
+
 
 
 
