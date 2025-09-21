@@ -3,6 +3,10 @@
 #include "layouts/position_map.dtsi"
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
 	chosen {
          zmk,kscan = &kscan0;
          zmk,physical-layout = &charybdis_physical_layout;
@@ -101,6 +105,7 @@
             ;
     };
 };
+
 
 
 
