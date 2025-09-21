@@ -2,11 +2,7 @@
 #include <physical_layouts.dtsi>
 #include "layouts/position_map.dtsi"
 
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
-    };
+/ 
 	chosen {
          zmk,kscan = &kscan0;
          zmk,physical-layout = &charybdis_physical_layout;
@@ -106,13 +102,7 @@
     };
 };
 
-/ {
-        layouts_charibdis_position_map: layouts_charybdis_map {
-                compatible = "zmk,physical-layout-position-map";
 
-                complete;
-        };
-};
 &layouts_charybdis_position_map {
     default {
         physical-layout = <&charybdis_physical_layout>;
@@ -125,6 +115,7 @@
         ,             <53 54 55>;
     };
 };
+
 
 
 
