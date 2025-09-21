@@ -106,6 +106,13 @@
     };
 };
 
+/ {
+        layouts_charibdis_position_map: layouts_charybdis_map {
+                compatible = "zmk,physical-layout-position-map";
+
+                complete;
+        };
+};
 
 
 
