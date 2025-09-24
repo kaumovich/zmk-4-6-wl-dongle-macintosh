@@ -2,7 +2,7 @@
 #include <physical_layouts.dtsi>
 #include "layouts/position_map.dtsi"
 
-/ 
+/ {
 	chosen {
          zmk,kscan = &kscan0;
          zmk,physical-layout = &charybdis_physical_layout;
@@ -26,7 +26,7 @@
     kscan0: kscan {
         diode-direction = "row2col";
     };
-};
+
 
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
@@ -99,7 +99,7 @@
             , <&key_physical_attrs 100 100 1052  520 (-3000)  1102   790>
             ;
     };
-};
+
 
 &layouts_charybdis_position_map{
         default {
@@ -112,7 +112,9 @@
                 ,          <48 49 50 51 52 53>
 				,          <54 55 56>;
         };
+	};
 };
+
 
 
 
