@@ -30,7 +30,7 @@
 
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Charybdis 5x6";
+        display-name = "default";
 
         kscan = <&kscan0>;
         transform = <&default_transform>;
@@ -100,6 +100,7 @@
             ;
     };
 };
+
 
 
 
