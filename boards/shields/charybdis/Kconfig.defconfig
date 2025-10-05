@@ -42,8 +42,12 @@ endif
 
 if SHIELD_CHARYBDIS_DONGLE || SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
+config ZMK_SPLIT
+	default y
+	
 
 endif
+
 
 
 
