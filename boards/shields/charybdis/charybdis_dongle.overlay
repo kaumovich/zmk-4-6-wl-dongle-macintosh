@@ -1,11 +1,10 @@
 #include "charybdis.dtsi"
-
+#include "split_input_common.dtsi"
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &default_transform;
-        zephyr,display = &oled;
     };
+
     mock_kscan: kscan_1 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
@@ -14,16 +13,8 @@
     };
 };
 
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-
-	input_relay_config_trackball {
-		compatible = "zmk,split-peripheral-input-relay";
-		device = <&vtrackball>;
-		relay-channel = <102>;
-	};
+&trackball_listener {
+    status = "okay";
 };
 
 &pro_micro_i2c {
@@ -43,6 +34,7 @@
         prechargep = <0x78>;
         };
 }; 
+
 
 
 
