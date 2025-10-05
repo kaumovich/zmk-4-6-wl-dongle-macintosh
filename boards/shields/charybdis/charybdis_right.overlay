@@ -27,9 +27,6 @@
 		;
 };
 
-&trackball_split {
-    device = <&trackball>;
-};
 
 &spi0 {
     status = "okay";
@@ -49,3 +46,4 @@
 		device = <&trackball>;
 		relay-channel = <102>;
 	};
+
