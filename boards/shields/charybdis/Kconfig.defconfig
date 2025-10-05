@@ -6,8 +6,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
-
-
 endif
 
 if ZMK_DISPLAY
@@ -46,5 +44,6 @@ if SHIELD_CHARYBDIS_DONGLE || SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 
 endif
+
 
 
