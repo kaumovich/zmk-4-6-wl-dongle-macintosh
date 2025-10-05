@@ -2,7 +2,7 @@ file_format: "1"
 id: charybdis
 name: Charybdis
 type: shield
-url: https://github.com/bastardkb/charybdis/
+url: https://github.com/kaumovich/zmk-4-6-wl-dongle-macintosh
 requires: [pro_micro]
 features:
   - keys
