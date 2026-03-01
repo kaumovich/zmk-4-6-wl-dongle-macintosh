@@ -1,13 +1,14 @@
 manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+  remotes:    
+    - name: aroum
+      url-base: https://github.com/aroum
     - name: badjeff
       url-base: https://github.com/badjeff
 
   projects:
+  projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: aroum
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
